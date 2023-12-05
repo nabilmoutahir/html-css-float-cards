@@ -3,3 +3,31 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* GENERICS------------- */
+.container {
+    width: 70%;
+    margin: auto;
+}
+
+.debug {
+    border: 1px dashed black;
+}
+
+.debug2 {
+    background-color: gray;
+    height: 100px;
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+}
+
+/* MAIN--------------------------------- */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.card {
+    float: left;
+}
