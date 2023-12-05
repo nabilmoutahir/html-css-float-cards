@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Dancing Script', cursive;
+    font-family: 'Fredoka', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* GENERICS------------- */
@@ -14,11 +17,16 @@
     border: 1px dashed black;
 }
 
-.debug2 {
-    background-color: gray;
-    height: 100px;
-    width: calc(100% / 3 - 40px);
-    margin: 20px;
+
+
+/* HEDER-------------------------------- */
+#title {
+    color: palevioletred;
+}
+
+#title, p {
+    text-align: center;
+    padding: 20px 0;
 }
 
 /* MAIN--------------------------------- */
@@ -28,6 +36,36 @@
     clear: both;
 }
 
+.card::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+div > a {
+    text-decoration: none;
+    color: cornflowerblue;
+}
+
 .card {
     float: left;
+    height: 100px;
+    width: calc(100% / 3 - 40px);
+    margin: 20px;
+    background-color: black;
+}
+
+.photo, img {
+    height: 100%;
+}
+
+.photo {
+    float: left;
+}
+
+.info {
+    color: white;
+    float: left;
+    line-height: 1.5rem;
+    padding: 10px;
 }
