@@ -13,15 +13,11 @@
     margin: auto;
 }
 
-.debug {
-    border: 1px dashed black;
-}
-
-
-
-/* HEDER-------------------------------- */
+/* HEADER-------------------------------- */
 #title {
     color: palevioletred;
+    font-weight: 900;
+    font-size: 2.5rem;
 }
 
 #title, p {
@@ -45,6 +41,10 @@
 div > a {
     text-decoration: none;
     color: cornflowerblue;
+}
+
+.info div:first-child{
+    font-weight: bolder;
 }
 
 .card {
